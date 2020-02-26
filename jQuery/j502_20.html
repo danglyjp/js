@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<form lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>WebのHTML制作</title>
+        <script src="js/jquery-3.4.1.js"></script>
+        <script>
+            $(function ($) {
+                $("#btn_hide").on("click", function () {
+                    $("#color_div").hide(5000);
+                    $("#li1").css("background-color", "yellow");
+
+                });
+
+                $("#btn_show").on("click", function () {
+                    $("#color_div").show();
+                    $("li").css("background-color", "yellow");
+                    $("ol").css("font-weight", "bold");
+                    $("ol").css("color", "red");
+                    $("ol").css("list-style-type", "upper-roman");
+                });
+
+
+                $("h1").css("padding", "30px");
+                $("h1").innerWidth("300px");
+                $("h1").innerHeight("100px");
+
+            });
+
+        </script>
+    </head>
+
+    <body>
+
+        <div id="color_div">
+            <h1>Web制作の勉強</h1>
+            <ol>
+                <li id="li1">HTML</li>
+                <li>CSS</li>
+                <li>JavaScipt</li>
+                <li>jQuery</li>
+            </ol>
+        </div>
+        <form>
+            <input type="button" id="btn_hide" value=".hide()">
+            <input type="button" id="btn_show" value=".show()">
+        </form>
+
+    </body>
+
+</form>

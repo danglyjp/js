@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Sample 3-3</title>
+    <script>
+        function change() {
+            var index = document.getElementById("sb").selectedIndex;
+            document.getElementById("txt").value = lang[index];
+        }
+    </script>
+</head>
+
+<body>
+    <h1>セレクトボックス</h1>
+    <form action="#">
+        <p><input type="text" id="txt" size="10" value="言語を選択"></p>
+
+        <select id="sb" onchange="change()">
+
+            <script type="text/javascript">
+                var lang = ["C言語", "html5", "Java", "PHP", "JavaScript"];
+                for (var i = 0; i < lang.length; i++) {
+                    document.write("<option>" + lang[i] + "</option>");
+                }
+            </script>
+
+        </select>
+
+    </form>
+
+</body>
+
+</html>

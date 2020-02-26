@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Sample 3-2</title>
+    <script>
+        function total() {
+            var price = 0;
+            if (document.getElementById("cb1").checked) {
+                price += 650;
+            }
+            if (document.getElementById("cb2").checked) {
+                price += 500;
+            }
+            if (document.getElementById("cb3").checked) {
+                price += 350;
+            }
+            document.getElementById("txt").value = price;
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>チェックボックス</h1>
+    <form action="#">
+        <input type="checkbox" id="cb1" value="650">らーめん
+        <input type="checkbox" id="cb2" value="500">チャーハン
+        <input type="checkbox" id="cb3" value="350">ギョーザ
+        <p>合計<input type="text" id="txt" size="10">円
+            <input type="button" id="btn" value="計算" onclick="total()"></p>
+    </form>
+
+</body>
+
+</html>

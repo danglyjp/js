@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>18096 補修課題4b</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var t = new Array();
+        t[2] =
+            '<p><input type="button" value="ラメンを2杯食べられるかどか質問する" onclick="ramen2()"</p>';
+        t[3] =
+            '<p><input type="button" value="ラメンを3杯食べられるかどか質問する" onclick="ramen3()"</p>';
+
+        for (var i = 2; i < 4; i++) {
+            document.write(t[i]);
+        }
+
+        function ramen2() {
+            if (confirm("あなたは2杯食べられますか？")) {
+                if (confirm("2杯＋1は食べられますか？")) {
+                    document.write(alert("You are eat Fighter!"));
+                } else {
+                    document.write(alert("健康には気をつけましょう"));
+                }
+            } else {
+                document.write(alert("普通人ですね"));
+            }
+        }
+        /////
+        function ramen3() {
+            if (confirm("あなたは3杯食べられますか？")) {
+                if (confirm("3杯＋1は食べられますか？")) {
+                    document.write(alert("十分大食いですよ"));
+                } else {
+                    document.write(alert("健康には気をつけましょう"));
+                }
+            } else {
+                document.write(alert("普通人ですね"));
+            }
+        }
+    </script>
+</body>
+
+</html>

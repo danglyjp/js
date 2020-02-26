@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebのHTML制作</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function ($) {
+            $("h1").click(function(){
+                alert("h1クリックしました");
+            });
+
+            $("h1").css("padding","30px");
+            $("h1").innerWidth("300px");
+            $("h1").innerHeight("100px");
+            $("h1").css("color","red");
+            $("h1").css("background-color","yellow");
+        });
+
+
+    </script>
+</head>
+
+<body>
+
+    <div id="color_div">
+        <h1>Web制作の勉強</h1>
+        <ol>
+            <li id="li1"><b>HTML</b></li>
+            <li>CSS</li>
+            <li>JavaScipt</li>
+            <li>jQuery</li>
+        </ol>
+    </div>
+</body>
+
+</html>

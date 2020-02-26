@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Animation1</title>
+    <style>
+    #container{
+        width: 800px;
+        height: 400px;
+        position: relative;
+    }
+    #animate{
+        width: 80px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+    }
+    
+    </style>
+    <script>
+    function myMove(){
+        var elem= document.getElementById("animate");
+        var pos=0;
+        var id = setInterval(frame,5);
+        function frame(){
+            if (pos == 720) {
+            clearInterval(id);
+            } else {
+            pos++;
+            elem.style.left = pos + 'px';
+            }
+        }
+     }
+    </script>
+</head>
+<body>
+<p>
+    <input type="button" onclick="myMove()" value="Animation">
+</p>
+<div id="container">
+    <div id="animate">Animate Here!!</div>
+</div>
+</body>
+</html>

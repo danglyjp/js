@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Sample3</title>
+    <script>
+        function change() {
+            var node = document.getElementsByTagName("body");
+            node[0].childNodes[1].childNodes[1].innerHTML = "初め孫ノードを更新しました";
+            node[0].childNodes[3].innerHTML = "二番目の子ノードを更新しました";
+
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>変更前の孫ノード</h1>
+    </div>
+    <p>変更前の孫ノード</p>
+    <form>
+        <input type="button" value="変更" onclick="change()">
+
+    </form>
+</body>
+
+</html>

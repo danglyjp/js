@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Sample2</title>
+    <script>
+        function change() {
+            var node = document.getElementsByTagName("p");
+            node[0].innerHTML = "node[0]";
+            node[1].innerHTML = "node[1]";
+            node[2].innerHTML = "node[2]";
+            node[3].innerHTML = "node[3]";
+        }
+    </script>
+</head>
+
+<body>
+    <p>番目のノード１</p>
+    <div>
+        <p>2番目のノード</p>
+    </div>
+    <div>
+        <p>3番目のノード</p>
+    </div>
+    <p>4番目のノード</p>
+    <form>
+        <input type="button" value="変更" onclick="change()">
+
+    </form>
+</body>
+
+</html>

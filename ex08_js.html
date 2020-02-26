@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+    <title>kadai8</title>
+</head>
+
+<body>
+    <script> 
+    
+        var a = 5, b = 8;
+        document.write("<p><table>");
+        document.write("<tr><th></th> <th>" + a + "</th> <th>" + b + "</th></tr>");
+        document.write("<tr><td >" + "＋" + "</td> <td colspan='2'>" + (a + b) + "</td> </tr>");
+        document.write("<tr><td>" + "ー" + "</td> <td colspan='2'>" + (a - b) + "</td> </tr>");
+        document.write("<tr><td>" + "＊" + "</td> <td colspan='2'>" + (a * b) + "</td> </tr>");
+        document.write("<tr><td>" + "／" + "</td> <td colspan='2'>" + (a / b) + "</td> </tr>");
+        document.write("</table></p>");
+    </script>
+</body>
+
+</html>

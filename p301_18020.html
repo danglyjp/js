@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Sample 3-1</title>
+    <script>
+        window.onload = function () {
+            document.getElementById("header").onmouseover = f1;
+            document.getElementById("header").onmouseout = f2;
+        }
+        function f1() {
+            document.getElementById("header").style.color = "red";
+        }
+        function f2() {
+            document.getElementById("header").style.color = "black";
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="header">マウスを上に置いてください!</h1>
+
+</body>
+
+</html>

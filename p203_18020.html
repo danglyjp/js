@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Sample 2-3</title>
+</head>
+
+<body>
+    <h1>関数の使い方</h1>
+    <script type="text/javascript">
+        function test(){
+            var point=document.getElementById("txt").value;
+            if(isNaN(point)){
+                alert("点数が数値ではありません");
+            }else if(point < 0 || point >　100){
+                alert("点数が範囲外です");
+            }
+            else if(point >= 60){
+                alert("合格です");
+            }else{
+                alert("不合格です");
+            }
+
+        }
+    </script>
+     <input type="text"  id="txt" size="6">点
+     <input type="button"  value="判定" onclick="test()">
+        
+</body>
+
+</html>

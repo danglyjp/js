@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Sample1</title>
+    <script>
+        function change() {
+            var val = document.getElementById("sample").innerHTML = "変更された<br>" + Date();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="sample">ここが変更されます</div>
+    <form>
+        <input type="button" value="変更" onclick="change()">
+    </form>
+</body>
+
+</html>

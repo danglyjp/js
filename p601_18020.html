@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Sample CSS</title>
+    <style>
+        #div1 {
+            background-color: aqua;
+            width: 150px;
+            height: 30px;
+            padding: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1" onmouseover="mOver(this)" onmouseout="mOut(this)">
+        Mouse Over Me!
+    </div>
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = "Thank You"; // 文字変換
+            obj.style.color = "red";    //　
+            obj.style.backgroundColor = "yellow";
+            obj.style.fontFamily = "Arial";
+            obj.style.fontSize = "x-large";
+
+        }
+        function mOut(obj) {
+            obj.innerHTML = "Mouse Over Me";
+            obj.style.color = "black";
+            obj.style.backgroundColor = "aqua";
+            obj.style.fontFamily = "Century";
+            obj.style.fontSize = "large";
+
+        }
+    </script>
+</body>
+
+</html>

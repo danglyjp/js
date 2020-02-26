@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Sample CSS</title>
+    <script>
+       function change(){
+           var val = document.getElementById("p1").innerHTML="Update!!";
+           document.getElementById("p1").style.color="blue";
+           document.getElementById("p1").style.fontFamily="Century";
+           document.getElementById("p1").style.fontSize="30px";
+       }
+    </script>
+</head>
+
+<body>
+    <div>
+        <p id="p1">変更前</p>
+    </div>
+    <form >
+        <input type="button" value="変更" onclick="change()">
+    </form>
+    
+</body>
+
+</html>

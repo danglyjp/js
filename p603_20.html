@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>603</title>
+    <script>
+    function addEvent(){
+        var x=document.getElementById("button");
+        x.innerHTML="New events!"; 
+        x.addEventListener("click",click);
+        x.addEventListener("mouseover",over);
+        x.addEventListener("mouseout",out);
+    }
+    function click(){
+    document.getElementById("demo").innerHTML+="Clicked!<br>";
+    }
+
+    function over(){
+    document.getElementById("demo").innerHTML+="Moused over!<br>";
+    }
+
+    function out(){
+    document.getElementById("demo").innerHTML+="Moused out!<br>";
+    }
+    
+    </script>
+</head>
+<body>
+<p>
+    How to use addEventListener to add multiple events for same button.
+</p>
+<button id="button" onclick="addEvent()">Add Event </button>
+<p id="demo"></p>
+</body>
+</html>

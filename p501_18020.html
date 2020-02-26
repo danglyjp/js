@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Sample HTML add</title>
+    <script>
+        function add() {
+            var para = document.createElement("p");
+            var node = document.createTextNode("This is new paragraph." + Date());
+            para.appendChild(node);
+            var element = document.getElementById("div1");
+            element.appendChild(para);
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" value="追加" onclick="add()">
+    </form>
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragrapth.</p>
+    </div>
+</body>
+
+</html>
